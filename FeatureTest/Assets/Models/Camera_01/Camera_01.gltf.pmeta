@@ -1,0 +1,147 @@
+{
+    "id": 2652298991,
+    "type": 6,
+    "meta": {
+        "materials": [
+            {
+                "name": "Camera_01_strap",
+                "baseColorTexturePath": "Assets/Models/Camera_01/textures/Camera_01_strap_diff_2k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/Camera_01/textures/Camera_01_strap_arm_2k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/Camera_01/textures/Camera_01_strap_nor_gl_2k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 1207078930
+            },
+            {
+                "name": "Camera_01_lens_body",
+                "baseColorTexturePath": "Assets/Models/Camera_01/textures/Camera_01_lens_body_diff_2k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/Camera_01/textures/Camera_01_lens_body_arm_2k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/Camera_01/textures/Camera_01_lens_body_nor_gl_2k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 3330788288
+            },
+            {
+                "name": "Camera_01_lens",
+                "baseColorTexturePath": "",
+                "baseColorFactor": {
+                    "x": 0.800000011920929,
+                    "y": 0.800000011920929,
+                    "z": 0.800000011920929,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "",
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.0,
+                "normalTexturePath": "",
+                "normalScale": 0.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 3163374515
+            },
+            {
+                "name": "Camera_01_body",
+                "baseColorTexturePath": "Assets/Models/Camera_01/textures/Camera_01_body_diff_2k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/Camera_01/textures/Camera_01_body_arm_2k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/Camera_01/textures/Camera_01_body_nor_gl_2k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 948603096
+            }
+        ],
+        "primitiveMaterials": [
+            {
+                "submeshIndex": 0,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            },
+            {
+                "submeshIndex": 1,
+                "primitiveIndex": 0,
+                "materialIndex": 1
+            },
+            {
+                "submeshIndex": 1,
+                "primitiveIndex": 1,
+                "materialIndex": 2
+            },
+            {
+                "submeshIndex": 1,
+                "primitiveIndex": 2,
+                "materialIndex": 3
+            },
+            {
+                "submeshIndex": 1,
+                "primitiveIndex": 3,
+                "materialIndex": 0
+            }
+        ]
+    }
+}

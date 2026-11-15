@@ -1,0 +1,109 @@
+{
+    "id": 2702774195,
+    "type": 6,
+    "meta": {
+        "materials": [
+            {
+                "name": "brass_goblets_01",
+                "baseColorTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_01_diff_1k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_01_arm_1k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_01_nor_gl_1k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 3395581157
+            },
+            {
+                "name": "brass_goblets_02",
+                "baseColorTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_02_diff_1k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_02_arm_1k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_02_nor_gl_1k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 3570420768
+            },
+            {
+                "name": "brass_goblets_03",
+                "baseColorTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_03_diff_1k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_03_arm_1k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/brass_goblets/textures/brass_goblet_03_nor_gl_1k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 4045251747
+            }
+        ],
+        "primitiveMaterials": [
+            {
+                "submeshIndex": 0,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            },
+            {
+                "submeshIndex": 1,
+                "primitiveIndex": 0,
+                "materialIndex": 1
+            },
+            {
+                "submeshIndex": 2,
+                "primitiveIndex": 0,
+                "materialIndex": 2
+            }
+        ]
+    }
+}

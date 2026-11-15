@@ -1,0 +1,63 @@
+{
+    "id": 352188330,
+    "type": 6,
+    "meta": {
+        "materials": [
+            {
+                "name": "treasure_chest",
+                "baseColorTexturePath": "Assets/Models/treasure_chest/textures/treasure_chest_diff_1k.jpg",
+                "baseColorFactor": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "metallicRoughnessTexturePath": "Assets/Models/treasure_chest/textures/treasure_chest_arm_1k.jpg",
+                "metallicFactor": 1.0,
+                "roughnessFactor": 1.0,
+                "normalTexturePath": "Assets/Models/treasure_chest/textures/treasure_chest_nor_gl_1k.jpg",
+                "normalScale": 1.0,
+                "occlusionTexturePath": "",
+                "occlusionStrength": 0.0,
+                "emissiveTexturePath": "",
+                "emissiveFactor": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "alphaMode": 0,
+                "alphaCutoff": 0.5,
+                "doubleSided": true,
+                "materialAssetId": 2151955673
+            }
+        ],
+        "primitiveMaterials": [
+            {
+                "submeshIndex": 0,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            },
+            {
+                "submeshIndex": 1,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            },
+            {
+                "submeshIndex": 2,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            },
+            {
+                "submeshIndex": 3,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            },
+            {
+                "submeshIndex": 4,
+                "primitiveIndex": 0,
+                "materialIndex": 0
+            }
+        ]
+    }
+}

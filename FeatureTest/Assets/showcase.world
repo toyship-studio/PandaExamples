@@ -1,0 +1,2996 @@
+{
+    "lighting": {
+        "ambientColor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+        },
+        "ambientIntensity": 0.0,
+        "environmentMap": 104356661,
+        "environmentIntensity": 1.5
+    },
+    "graphics": {
+        "shadows": {
+            "enabled": true,
+            "cascadeCount": 4,
+            "tileSize": 2048,
+            "distance": 60.0,
+            "strength": 1.0,
+            "softness": 1.5
+        },
+        "ssao": {
+            "enabled": true,
+            "radius": 0.6,
+            "intensity": 1.0
+        }
+    },
+    "entities": [
+        {
+            "id": 1047212559,
+            "tagComponent": {
+                "tag": "Sky"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cubeMapComponent": {
+                "material": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1777960983,
+            "tagComponent": {
+                "tag": "Sun"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 6.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": -0.3587468124079473,
+                    "y": 0.4272643537609325,
+                    "z": 0.18971880639381608,
+                    "w": 0.8079311054123957
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "directionalLightComponent": {
+                "color": {
+                    "x": 0.9760144560109476,
+                    "y": 1.0,
+                    "z": 0.9237897683981933,
+                    "w": 1.0
+                },
+                "intensity": 12.0,
+                "isEnabled": true,
+                "castShadows": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1018227507,
+            "tagComponent": {
+                "tag": "Camera"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 2.7,
+                    "z": 9.2
+                },
+                "rotation": {
+                    "x": -0.104242945728429,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.9945518630347338
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cameraComponent": {
+                "isPrimary": true,
+                "camera": {
+                    "projectionType": 0,
+                    "fieldOfView": 38.0,
+                    "orthoSize": 1.0,
+                    "zNear": 0.1,
+                    "zFar": 500.0
+                },
+                "postprocessing": 0,
+                "postprocessingEnabled": true,
+                "bloomEnabled": true,
+                "bloomIntensity": 0.6,
+                "bloomRadius": 1.0,
+                "autoExposureEnabled": false,
+                "autoExposureKey": 0.18,
+                "autoExposureSpeed": 2.0,
+                "autoExposureMin": 0.25,
+                "autoExposureMax": 4.0,
+                "tonemap": "agx",
+                "exposure": -1.4
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2689828446,
+            "tagComponent": {
+                "tag": "Ground"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 60.0,
+                    "y": 1.0,
+                    "z": 60.0
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 3,
+                "material": 1481784936
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2489463558,
+            "tagComponent": {
+                "tag": "Roughness Sweep"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": [
+                    2389504835,
+                    392536825,
+                    686168799,
+                    272327149,
+                    1608591945,
+                    1732006267,
+                    3337124851,
+                    4264886465,
+                    2985249637,
+                    2301767767,
+                    797695686,
+                    391554548,
+                    1485631056,
+                    1615959394,
+                    3246768106,
+                    4183344344
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -1.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2389504835,
+            "tagComponent": {
+                "tag": "Step 1"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.2,
+                    "z": -0.45
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 7.2,
+                    "y": 0.4,
+                    "z": 1.9
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 3621706538
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 392536825,
+            "tagComponent": {
+                "tag": "Step 2"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.6,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 7.2,
+                    "y": 0.4,
+                    "z": 1.0
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 3621706538
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 686168799,
+            "tagComponent": {
+                "tag": "Plastic 0"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -2.7,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 3567192229
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 272327149,
+            "tagComponent": {
+                "tag": "Gold 0"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -2.7,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 2678780149
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1608591945,
+            "tagComponent": {
+                "tag": "Plastic 1"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.8,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 1826033518
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1732006267,
+            "tagComponent": {
+                "tag": "Gold 1"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.8,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 669185854
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3337124851,
+            "tagComponent": {
+                "tag": "Plastic 2"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.9,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 684403051
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4264886465,
+            "tagComponent": {
+                "tag": "Gold 2"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.9,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 1677644091
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2985249637,
+            "tagComponent": {
+                "tag": "Plastic 3"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 913458438
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2301767767,
+            "tagComponent": {
+                "tag": "Gold 3"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 2101853526
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 797695686,
+            "tagComponent": {
+                "tag": "Plastic 4"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.9,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 4199952137
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 391554548,
+            "tagComponent": {
+                "tag": "Gold 4"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.9,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 2976110425
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1485631056,
+            "tagComponent": {
+                "tag": "Plastic 5"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.8,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 95200120
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1615959394,
+            "tagComponent": {
+                "tag": "Gold 5"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.8,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 1318673192
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3246768106,
+            "tagComponent": {
+                "tag": "Plastic 6"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 2.7,
+                    "y": 0.75,
+                    "z": 0.05
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 3177630080
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4183344344,
+            "tagComponent": {
+                "tag": "Gold 6"
+            },
+            "relationshipComponent": {
+                "parent": 2489463558,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 2.7,
+                    "y": 1.15,
+                    "z": -0.9
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 3594956172
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 434541590,
+            "tagComponent": {
+                "tag": "Materials"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": [
+                    3814547897,
+                    2802097824,
+                    2077119910,
+                    507190696,
+                    2418753060,
+                    1737672793,
+                    3948710153
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.6
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3814547897,
+            "tagComponent": {
+                "tag": "Chrome"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -2.7,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 4155763353
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2802097824,
+            "tagComponent": {
+                "tag": "Copper"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.8,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 2129831413
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2077119910,
+            "tagComponent": {
+                "tag": "Brushed Steel"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.9,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 2552249607
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 507190696,
+            "tagComponent": {
+                "tag": "White Ceramic"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 2358636288
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2418753060,
+            "tagComponent": {
+                "tag": "Blue Paint"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.9,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 3728774807
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1737672793,
+            "tagComponent": {
+                "tag": "Black Rubber"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.8,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 1102003325
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3948710153,
+            "tagComponent": {
+                "tag": "Emissive"
+            },
+            "relationshipComponent": {
+                "parent": 434541590,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 2.7,
+                    "y": 0.35,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.7,
+                    "y": 0.7,
+                    "z": 0.7
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 1,
+                "material": 795323072
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3816437055,
+            "tagComponent": {
+                "tag": "Models"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": [
+                    1190207968,
+                    1423935878,
+                    1382443355,
+                    2910486868,
+                    704606378
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 2.6
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1190207968,
+            "tagComponent": {
+                "tag": "Marble Bust"
+            },
+            "relationshipComponent": {
+                "parent": 3816437055,
+                "children": [
+                    3007292091
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -2.7,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.17364817766693033,
+                    "z": 0.0,
+                    "w": 0.984807753012208
+                },
+                "scale": {
+                    "x": 1.8,
+                    "y": 1.8,
+                    "z": 1.8
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3007292091,
+            "tagComponent": {
+                "tag": "marble_bust_01.gltf"
+            },
+            "relationshipComponent": {
+                "parent": 1190207968,
+                "children": [
+                    1450825603
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1450825603,
+            "tagComponent": {
+                "tag": "marble_bust_01"
+            },
+            "relationshipComponent": {
+                "parent": 3007292091,
+                "children": [
+                    893608187
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.028335653245449066,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 893608187,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 1450825603,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 3207870189,
+                "overrideMaterial": 0,
+                "submeshIndex": 0,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1423935878,
+            "tagComponent": {
+                "tag": "Camera"
+            },
+            "relationshipComponent": {
+                "parent": 3816437055,
+                "children": [
+                    2789256756
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.4,
+                    "y": 0.0,
+                    "z": 0.5
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.21643961393810288,
+                    "z": 0.0,
+                    "w": 0.9762960071199334
+                },
+                "scale": {
+                    "x": 4.0,
+                    "y": 4.0,
+                    "z": 4.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2789256756,
+            "tagComponent": {
+                "tag": "Camera_01.gltf"
+            },
+            "relationshipComponent": {
+                "parent": 1423935878,
+                "children": [
+                    3632031705,
+                    3182575368
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3632031705,
+            "tagComponent": {
+                "tag": "Camera_01_strap"
+            },
+            "relationshipComponent": {
+                "parent": 2789256756,
+                "children": [
+                    4097490060
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4097490060,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 3632031705,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2652298991,
+                "overrideMaterial": 0,
+                "submeshIndex": 0,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3182575368,
+            "tagComponent": {
+                "tag": "Camera_01"
+            },
+            "relationshipComponent": {
+                "parent": 2789256756,
+                "children": [
+                    2178679703,
+                    4141560577,
+                    1876058811,
+                    416633389
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2178679703,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 3182575368,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2652298991,
+                "overrideMaterial": 0,
+                "submeshIndex": 1,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4141560577,
+            "tagComponent": {
+                "tag": "primitive 1"
+            },
+            "relationshipComponent": {
+                "parent": 3182575368,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2652298991,
+                "overrideMaterial": 0,
+                "submeshIndex": 1,
+                "primitiveIndex": 1
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1876058811,
+            "tagComponent": {
+                "tag": "primitive 2"
+            },
+            "relationshipComponent": {
+                "parent": 3182575368,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2652298991,
+                "overrideMaterial": 0,
+                "submeshIndex": 1,
+                "primitiveIndex": 2
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 416633389,
+            "tagComponent": {
+                "tag": "primitive 3"
+            },
+            "relationshipComponent": {
+                "parent": 3182575368,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2652298991,
+                "overrideMaterial": 0,
+                "submeshIndex": 1,
+                "primitiveIndex": 3
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1382443355,
+            "tagComponent": {
+                "tag": "Brass Goblets"
+            },
+            "relationshipComponent": {
+                "parent": 3816437055,
+                "children": [
+                    777252209
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.4
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 2.5,
+                    "y": 2.5,
+                    "z": 2.5
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 777252209,
+            "tagComponent": {
+                "tag": "brass_goblets.gltf"
+            },
+            "relationshipComponent": {
+                "parent": 1382443355,
+                "children": [
+                    2798878106,
+                    1071262752,
+                    1222450358
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2798878106,
+            "tagComponent": {
+                "tag": "brass_goblet_01"
+            },
+            "relationshipComponent": {
+                "parent": 777252209,
+                "children": [
+                    2678852824
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.00032767606899142265,
+                    "y": 0.004920530132949352,
+                    "z": 0.12025979906320572
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2678852824,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 2798878106,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2702774195,
+                "overrideMaterial": 0,
+                "submeshIndex": 0,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1071262752,
+            "tagComponent": {
+                "tag": "brass_goblet_02"
+            },
+            "relationshipComponent": {
+                "parent": 777252209,
+                "children": [
+                    577134614
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.14954441785812378,
+                    "y": 0.005822327919304371,
+                    "z": -0.030845999717712402
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 577134614,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 1071262752,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2702774195,
+                "overrideMaterial": 0,
+                "submeshIndex": 1,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1222450358,
+            "tagComponent": {
+                "tag": "brass_goblet_03"
+            },
+            "relationshipComponent": {
+                "parent": 777252209,
+                "children": [
+                    4293966227
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.15866722166538239,
+                    "y": 0.006193193141371012,
+                    "z": -0.027895381674170494
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4293966227,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 1222450358,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2702774195,
+                "overrideMaterial": 0,
+                "submeshIndex": 2,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2910486868,
+            "tagComponent": {
+                "tag": "Treasure Chest"
+            },
+            "relationshipComponent": {
+                "parent": 3816437055,
+                "children": [
+                    696043828
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.4,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": -0.0,
+                    "y": -0.21643961393810288,
+                    "z": -0.0,
+                    "w": 0.9762960071199334
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 696043828,
+            "tagComponent": {
+                "tag": "treasure_chest.gltf"
+            },
+            "relationshipComponent": {
+                "parent": 2910486868,
+                "children": [
+                    4016382699,
+                    4241769003,
+                    2165303779,
+                    3462088626,
+                    4025389098
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4016382699,
+            "tagComponent": {
+                "tag": "treasure_chest_bottom"
+            },
+            "relationshipComponent": {
+                "parent": 696043828,
+                "children": [
+                    987539075
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.016473479568958282,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 987539075,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 4016382699,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 352188330,
+                "overrideMaterial": 0,
+                "submeshIndex": 0,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4241769003,
+            "tagComponent": {
+                "tag": "treasure_chest_lid"
+            },
+            "relationshipComponent": {
+                "parent": 696043828,
+                "children": [
+                    3470095896
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.4205016791820526,
+                    "z": -0.2571077048778534
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3470095896,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 4241769003,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 352188330,
+                "overrideMaterial": 0,
+                "submeshIndex": 1,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2165303779,
+            "tagComponent": {
+                "tag": "treasure_chest_handle_left"
+            },
+            "relationshipComponent": {
+                "parent": 696043828,
+                "children": [
+                    3963401670
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.4682048559188843,
+                    "y": 0.29400762915611267,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3963401670,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 2165303779,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 352188330,
+                "overrideMaterial": 0,
+                "submeshIndex": 2,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3462088626,
+            "tagComponent": {
+                "tag": "treasure_chest_handle_right"
+            },
+            "relationshipComponent": {
+                "parent": 696043828,
+                "children": [
+                    1497225231
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.4682046175003052,
+                    "y": 0.29400762915611267,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1497225231,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 3462088626,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 352188330,
+                "overrideMaterial": 0,
+                "submeshIndex": 3,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4025389098,
+            "tagComponent": {
+                "tag": "treasure_chest_lock"
+            },
+            "relationshipComponent": {
+                "parent": 696043828,
+                "children": [
+                    3906930504
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.4223257601261139,
+                    "z": 0.25776776671409607
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3906930504,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 4025389098,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 352188330,
+                "overrideMaterial": 0,
+                "submeshIndex": 4,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 704606378,
+            "tagComponent": {
+                "tag": "Boombox"
+            },
+            "relationshipComponent": {
+                "parent": 3816437055,
+                "children": [
+                    3414377415
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 2.8,
+                    "y": 0.0,
+                    "z": 0.3
+                },
+                "rotation": {
+                    "x": -0.0,
+                    "y": -0.17364817766693033,
+                    "z": -0.0,
+                    "w": 0.984807753012208
+                },
+                "scale": {
+                    "x": 1.5,
+                    "y": 1.5,
+                    "z": 1.5
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3414377415,
+            "tagComponent": {
+                "tag": "boombox.gltf"
+            },
+            "relationshipComponent": {
+                "parent": 704606378,
+                "children": [
+                    2253950924
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2253950924,
+            "tagComponent": {
+                "tag": "boombox"
+            },
+            "relationshipComponent": {
+                "parent": 3414377415,
+                "children": [
+                    22109644,
+                    1985375578
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 22109644,
+            "tagComponent": {
+                "tag": "primitive 0"
+            },
+            "relationshipComponent": {
+                "parent": 2253950924,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2755866458,
+                "overrideMaterial": 0,
+                "submeshIndex": 0,
+                "primitiveIndex": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1985375578,
+            "tagComponent": {
+                "tag": "primitive 1"
+            },
+            "relationshipComponent": {
+                "parent": 2253950924,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "importedSubmeshComponent": {
+                "importedMesh": 2755866458,
+                "overrideMaterial": 0,
+                "submeshIndex": 0,
+                "primitiveIndex": 1
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2596242860,
+            "tagComponent": {
+                "tag": "Props"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": [
+                    2453637430,
+                    3698348980,
+                    1790843885,
+                    4088875607,
+                    2226158273,
+                    3786938260,
+                    2183872885
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -6.3,
+                    "y": 0.0,
+                    "z": -1.2
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2453637430,
+            "tagComponent": {
+                "tag": "Wall Back"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 1.25,
+                    "z": -1.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 4.0,
+                    "y": 2.5,
+                    "z": 0.2
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 3832368626
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3698348980,
+            "tagComponent": {
+                "tag": "Wall Side"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.9,
+                    "y": 1.25,
+                    "z": 0.4
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.2,
+                    "y": 2.5,
+                    "z": 2.6
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 3832368626
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1790843885,
+            "tagComponent": {
+                "tag": "Box A"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.1,
+                    "y": 0.4,
+                    "z": -0.2
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.8,
+                    "y": 0.8,
+                    "z": 0.8
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 1959617101
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4088875607,
+            "tagComponent": {
+                "tag": "Box B"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -0.25,
+                    "y": 0.3,
+                    "z": -0.35
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.15643446504023087,
+                    "z": 0.0,
+                    "w": 0.9876883405951378
+                },
+                "scale": {
+                    "x": 0.6,
+                    "y": 0.6,
+                    "z": 0.6
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 1959617101
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2226158273,
+            "tagComponent": {
+                "tag": "Box C"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.0,
+                    "y": 1.05,
+                    "z": -0.25
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.28401534470392265,
+                    "z": 0.0,
+                    "w": 0.958819734868193
+                },
+                "scale": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 1959617101
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3786938260,
+            "tagComponent": {
+                "tag": "Column"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.9,
+                    "y": 0.9,
+                    "z": 0.2
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.5,
+                    "y": 1.8,
+                    "z": 0.5
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 4,
+                "material": 3832368626
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2183872885,
+            "tagComponent": {
+                "tag": "Capsule"
+            },
+            "relationshipComponent": {
+                "parent": 2596242860,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.5,
+                    "y": 0.5,
+                    "z": 1.2
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "z": 0.5
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 2,
+                "material": 514516752
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2662903101,
+            "tagComponent": {
+                "tag": "Shadow Props"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": [
+                    999999704,
+                    10695297,
+                    3297402901,
+                    3137582419
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 5.6,
+                    "y": 0.0,
+                    "z": -1.2
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 999999704,
+            "tagComponent": {
+                "tag": "Pole"
+            },
+            "relationshipComponent": {
+                "parent": 2662903101,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 1.5,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.08,
+                    "y": 3.0,
+                    "z": 0.08
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 4,
+                "material": 3832368626
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 10695297,
+            "tagComponent": {
+                "tag": "Slab"
+            },
+            "relationshipComponent": {
+                "parent": 2662903101,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.2,
+                    "y": 1.6,
+                    "z": 0.4
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.4,
+                    "y": 0.1,
+                    "z": 1.0
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 1959617101
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3297402901,
+            "tagComponent": {
+                "tag": "Slab Leg"
+            },
+            "relationshipComponent": {
+                "parent": 2662903101,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 1.75,
+                    "y": 0.8,
+                    "z": 0.75
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.08,
+                    "y": 1.6,
+                    "z": 0.08
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 4,
+                "material": 3832368626
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3137582419,
+            "tagComponent": {
+                "tag": "Low Box"
+            },
+            "relationshipComponent": {
+                "parent": 2662903101,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -1.0,
+                    "y": 0.25,
+                    "z": 0.8
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 0.9,
+                    "y": 0.5,
+                    "z": 0.9
+                }
+            },
+            "primitiveMeshComponent": {
+                "kind": 0,
+                "material": 1959617101
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2619038384,
+            "tagComponent": {
+                "tag": "Warm Light"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -7.4,
+                    "y": 1.2,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "pointLightComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.55,
+                    "z": 0.25,
+                    "w": 1.0
+                },
+                "intensity": 40.0,
+                "radius": 4.0,
+                "isEnabled": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 995463166,
+            "tagComponent": {
+                "tag": "Cool Light"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -5.1,
+                    "y": 0.6,
+                    "z": 0.4
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "pointLightComponent": {
+                "color": {
+                    "x": 0.3,
+                    "y": 0.55,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "intensity": 30.0,
+                "radius": 3.0,
+                "isEnabled": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "rendering": {
+        "features": [
+            "lights",
+            "shadows",
+            "environment",
+            "ssao"
+        ]
+    },
+    "world": {
+        "startWorld": "Assets/showcase.world"
+    },
+    "modules": {
+        "entries": []
+    },
+    "mcp": {
+        "enabled": true,
+        "port": 7717
+    }
+}
