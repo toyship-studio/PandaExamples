@@ -1,0 +1,69 @@
+{
+    "scripts": [
+        {
+            "name": "Probe",
+            "scriptFields": [
+                {
+                    "fieldId": 1695348488,
+                    "name": "count",
+                    "type": "integer",
+                    "list": false
+                },
+                {
+                    "fieldId": 805702412,
+                    "name": "speed",
+                    "type": "float",
+                    "list": false
+                },
+                {
+                    "fieldId": 2759408164,
+                    "name": "target",
+                    "type": "entity",
+                    "list": false
+                },
+                {
+                    "fieldId": 1319187964,
+                    "name": "icon",
+                    "type": "texture",
+                    "list": false
+                },
+                {
+                    "fieldId": 1007455228,
+                    "name": "skin",
+                    "type": "material",
+                    "list": false
+                },
+                {
+                    "fieldId": 3809068700,
+                    "name": "next",
+                    "type": "world",
+                    "list": false
+                },
+                {
+                    "fieldId": 596397629,
+                    "name": "numbers",
+                    "type": "integer",
+                    "list": true
+                },
+                {
+                    "fieldId": 860442718,
+                    "name": "levels",
+                    "type": "world",
+                    "list": true
+                },
+                {
+                    "fieldId": 3494326243,
+                    "name": "frames",
+                    "type": "texture",
+                    "list": true
+                },
+                {
+                    "fieldId": 1385856815,
+                    "name": "waypoints",
+                    "type": "entity",
+                    "list": true
+                }
+            ]
+        }
+    ]
+}

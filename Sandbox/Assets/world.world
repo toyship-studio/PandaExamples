@@ -1,0 +1,346 @@
+{
+    "lighting": {
+        "ambientColor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+        },
+        "ambientIntensity": 0.11999999731779099,
+        "environmentMap": 0,
+        "environmentIntensity": 1.0
+    },
+    "graphics": {
+        "shadows": {
+            "enabled": true,
+            "cascadeCount": 3,
+            "tileSize": 1024,
+            "distance": 100.0,
+            "strength": 1.0,
+            "slopeBias": 2.0,
+            "normalOffset": 1.0,
+            "receiverBias": 0.5,
+            "softness": 1.5,
+            "lampTileSize": 512
+        },
+        "occlusion": {
+            "enabled": true,
+            "aoStrength": 0.800000011920929,
+            "sunStrengthNear": 0.30000001192092896,
+            "sunStrengthFar": 0.800000011920929,
+            "cellSize": 2.0,
+            "windowChunks": 8,
+            "extinction": 0.699999988079071,
+            "surfaceOffset": 2.0,
+            "contrast": 1.0
+        },
+        "ssao": {
+            "enabled": true,
+            "radius": 0.6000000238418579,
+            "intensity": 1.0,
+            "slices": 3,
+            "steps": 4,
+            "fullResolution": false
+        },
+        "fog": {
+            "enabled": false,
+            "density": 0.009999999776482582,
+            "heightFalloff": 20.0,
+            "baseHeight": 0.0,
+            "startDistance": 0.0,
+            "maxOpacity": 1.0,
+            "tint": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0,
+                "w": 1.0
+            },
+            "sunScatter": 0.25,
+            "affectSky": true
+        }
+    },
+    "wind": {
+        "strength": 0.25,
+        "speed": 1.600000023841858,
+        "gustiness": 0.6000000238418579,
+        "directionDegrees": 0.0
+    },
+    "terrain": {
+        "lod1": 120.0,
+        "lod2": 240.0,
+        "drawDistance": 0.0,
+        "ring2Width": 4,
+        "ring3Width": 16,
+        "ring4Width": 32
+    },
+    "flora": {
+        "grass": 80.0,
+        "grassDissolve": 0.0,
+        "tree": 80.0,
+        "imposter": 4000.0
+    },
+    "entities": [
+        {
+            "id": 732211536,
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "tagComponent": {
+                "tag": "Camera"
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 4.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cameraComponent": {
+                "isPrimary": true,
+                "camera": {
+                    "projectionType": 0,
+                    "fieldOfView": 70.0,
+                    "orthoSize": 1.0,
+                    "zNear": 0.10000000149011612,
+                    "zFar": 1000.0
+                },
+                "postprocessing": 0,
+                "postprocessingEnabled": true,
+                "bloomEnabled": false,
+                "bloomIntensity": 1.0,
+                "bloomRadius": 1.0,
+                "autoExposureEnabled": false,
+                "autoExposureKey": 0.18000000715255737,
+                "autoExposureSpeed": 2.0,
+                "autoExposureMin": 0.25,
+                "autoExposureMax": 4.0,
+                "tonemap": "agx",
+                "exposure": 0.0,
+                "antialiasing": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2947783993,
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "tagComponent": {
+                "tag": "Camera"
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 4.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cameraComponent": {
+                "isPrimary": true,
+                "camera": {
+                    "projectionType": 0,
+                    "fieldOfView": 70.0,
+                    "orthoSize": 1.0,
+                    "zNear": 0.10000000149011612,
+                    "zFar": 1000.0
+                },
+                "postprocessing": 0,
+                "postprocessingEnabled": true,
+                "bloomEnabled": false,
+                "bloomIntensity": 1.0,
+                "bloomRadius": 1.0,
+                "autoExposureEnabled": false,
+                "autoExposureKey": 0.18000000715255737,
+                "autoExposureSpeed": 2.0,
+                "autoExposureMin": 0.25,
+                "autoExposureMax": 4.0,
+                "tonemap": "agx",
+                "exposure": 0.0,
+                "antialiasing": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 4165951998,
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "tagComponent": {
+                "tag": "Directional Light"
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": -0.3303660750389099,
+                    "y": -0.2432103455066681,
+                    "z": -0.0885213240981102,
+                    "w": 0.9076733589172363
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "directionalLightComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "intensity": 1.0,
+                "isEnabled": true,
+                "castShadows": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 423811906,
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "tagComponent": {
+                "tag": "Orange Sprite"
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "spriteRendererComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.5,
+                    "z": 0.20000000298023224,
+                    "w": 1.0
+                },
+                "cols": 1,
+                "rows": 1,
+                "index": 0,
+                "material": 0,
+                "texture": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 1898192272,
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "tagComponent": {
+                "tag": "Sky"
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cubeMapComponent": {
+                "material": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3872290731,
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "tagComponent": {
+                "tag": "Sky"
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cubeMapComponent": {
+                "material": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        }
+    ]
+}

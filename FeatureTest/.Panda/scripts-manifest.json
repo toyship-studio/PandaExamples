@@ -6,7 +6,8 @@
                 {
                     "fieldId": 3516922139,
                     "name": "var",
-                    "type": "integer"
+                    "type": "integer",
+                    "list": false
                 }
             ]
         }

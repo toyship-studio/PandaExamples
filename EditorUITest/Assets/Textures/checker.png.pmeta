@@ -1,0 +1,11 @@
+{
+    "id": 3467161616,
+    "type": 1,
+    "meta": {
+        "minFiltering": 5,
+        "magFiltering": 1,
+        "numMips": 16,
+        "srgb": true,
+        "compressed": true
+    }
+}

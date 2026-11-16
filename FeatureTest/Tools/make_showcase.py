@@ -23,6 +23,8 @@ ASSETS = os.path.join(PROJECT, "Assets")
 PBR_SHADER = 17  # the built-in PBR shader (StaticResources::defaultPbrShader)
 ENVIRONMENT = "Environment/kloofendal_48d_partly_cloudy_puresky.hdr"
 
+# SHOWCASE_ENVIRONMENT=none: a world without a map — the built-in gradient sky lights it.
+USE_MAP = os.environ.get("SHOWCASE_ENVIRONMENT", "map") != "none"
 TONEMAP = os.environ.get("SHOWCASE_TONEMAP", "agx")
 EXPOSURE = float(os.environ.get("SHOWCASE_EXPOSURE", "-1.4"))
 
@@ -154,7 +156,7 @@ class World:
 
 
 def material(name, color=(1, 1, 1), metallic=0.0, roughness=0.5, emissive=(0, 0, 0), emissive_intensity=1.0,
-             base_color_texture=0, alpha=1.0, alpha_mode=0):
+             base_color_texture=0, alpha=1.0, alpha_mode=0, transmission=0.0):
     """A PBR material of the showcase: the .mat (the inputs of the built-in PBR shader, in its
     order) and its sidecar. Returns the asset id."""
     relative = "Showcase/Materials/%s.mat" % name
@@ -176,6 +178,7 @@ def material(name, color=(1, 1, 1), metallic=0.0, roughness=0.5, emissive=(0, 0,
         {"name": "alphaCutoff", "type": 0, "value": 0.5},
         {"name": "doubleSided", "type": 1, "value": 0},
         {"name": "emissiveIntensity", "type": 0, "value": float(emissive_intensity)},
+        {"name": "transmissionFactor", "type": 0, "value": float(transmission)},
     ]
     with open(path, "w") as f:
         json.dump({"inputs": inputs}, f, indent=4)
@@ -202,7 +205,7 @@ def main():
         "Sun", position=(0, 6, 0), rotation=quat_look([-c for c in to_sun]),
         directionalLightComponent={
             "color": vec4(sun["color"][0], sun["color"][1], sun["color"][2], 1.0),
-            "intensity": 12.0, "isEnabled": True, "castShadows": True,
+            "intensity": 3.8, "isEnabled": True, "castShadows": True,
         },
     )
     camera_position = (0.0, 2.7, 9.2)
@@ -256,6 +259,19 @@ def main():
         x = (index - (len(samples) - 1) / 2) * 0.9
         world.primitive(name, SPHERE, identifier, parent=shelf, position=(x, 0.35, 0), scale=0.7)
 
+    # Blended surfaces: clear glass, tinted glass (a blend without transmission), frosted glass.
+    glass = world.entity("Glass", position=(4.3, 0, 0.9))
+    world.primitive("Clear Glass", SPHERE, material("glass", color=(1.0, 1.0, 1.0), roughness=0.03, alpha_mode=2,
+                                                    transmission=1.0),
+                    parent=glass, position=(0, 0.35, 0), scale=0.7)
+    world.primitive("Tinted Pane", CUBE, material("glass_tinted", color=(0.1, 0.5, 0.9), roughness=0.05,
+                                                  alpha=0.45, alpha_mode=2),
+                    parent=glass, position=(0.9, 0.5, 0.1), scale=(0.06, 1.0, 1.2),
+                    rotation=quat_from_axis_angle((0, 1, 0), 25))
+    world.primitive("Frosted Glass", SPHERE, material("glass_frosted", color=(1.0, 1.0, 1.0), roughness=0.35,
+                                                      alpha_mode=2, transmission=0.85),
+                    parent=glass, position=(0.1, 0.35, 0.9), scale=0.7)
+
     # glTF models (Poly Haven), front row.
     models = world.entity("Models", position=(0, 0, 2.6))
     world.gltf("Marble Bust", "Models/marble_bust_01/marble_bust_01.gltf", parent=models,
@@ -290,19 +306,27 @@ def main():
     world.primitive("Slab Leg", CYLINDER, wall, parent=shadows, position=(1.75, 0.8, 0.75), scale=(0.08, 1.6, 0.08))
     world.primitive("Low Box", CUBE, box, parent=shadows, position=(-1.0, 0.25, 0.8), scale=(0.9, 0.5, 0.9))
 
-    # Point lights at the wall corner.
-    world.entity("Warm Light", position=(-7.4, 1.2, 0.0),
-                 pointLightComponent={"color": vec4(1.0, 0.55, 0.25, 1.0), "intensity": 40.0, "radius": 4.0,
-                                      "isEnabled": True})
-    world.entity("Cool Light", position=(-5.1, 0.6, 0.4),
-                 pointLightComponent={"color": vec4(0.3, 0.55, 1.0, 1.0), "intensity": 30.0, "radius": 3.0,
-                                      "isEnabled": True})
+    # Lamps at the wall corner: a warm point light, and two spots from above (a narrow hard one
+    # and a wide soft one) on the wall. The intensity of a lamp is its light at 1 m.
+    world.entity("Warm Light", position=(-7.6, 0.5, 0.1),
+                 pointLightComponent={"color": vec4(1.0, 0.5, 0.2, 1.0), "intensity": 10.0, "radius": 3.5,
+                                      "isEnabled": True, "coneAngle": 0.0, "coneSoftness": 0.25, "castShadows": True})
+    spot_position = (-6.9, 2.4, 1.0)
+    world.entity("Cool Spot", position=spot_position,
+                 rotation=quat_look([t - p for t, p in zip((-7.2, 1.1, -2.1), spot_position)]),
+                 pointLightComponent={"color": vec4(0.35, 0.6, 1.0, 1.0), "intensity": 90.0, "radius": 7.0,
+                                      "isEnabled": True, "coneAngle": 34.0, "coneSoftness": 0.15, "castShadows": True})
+    spot_position = (-5.0, 2.6, 1.2)
+    world.entity("Soft Spot", position=spot_position,
+                 rotation=quat_look([t - p for t, p in zip((-5.2, 0.9, -2.1), spot_position)]),
+                 pointLightComponent={"color": vec4(1.0, 0.85, 0.6, 1.0), "intensity": 70.0, "radius": 7.0,
+                                      "isEnabled": True, "coneAngle": 60.0, "coneSoftness": 0.9, "castShadows": True})
 
     settings = {
         "lighting": {
             "ambientColor": vec4(1, 1, 1, 1),
             "ambientIntensity": 0.0,
-            "environmentMap": asset_id(ENVIRONMENT),
+            "environmentMap": asset_id(ENVIRONMENT) if USE_MAP else 0,
             "environmentIntensity": 1.5,
         },
         "graphics": {

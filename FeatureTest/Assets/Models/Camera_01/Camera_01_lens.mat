@@ -68,7 +68,7 @@
         {
             "name": "alphaMode",
             "type": 1,
-            "value": 0
+            "value": 2
         },
         {
             "name": "alphaCutoff",
@@ -79,6 +79,16 @@
             "name": "doubleSided",
             "type": 1,
             "value": 1
+        },
+        {
+            "name": "emissiveIntensity",
+            "type": 0,
+            "value": 1.0
+        },
+        {
+            "name": "transmissionFactor",
+            "type": 0,
+            "value": 1.0
         }
     ]
 }

@@ -1,0 +1,25 @@
+---
+name: panda-build-scripts
+description: Building and reloading the game's C++ scripts (Scripts/). Use after editing script code.
+---
+
+# Building scripts
+
+Scripts are C++ in `Scripts/Sandbox/src/`; they are built into a dynamic library that
+the editor loads.
+
+## Workflow
+
+1. Edit the code (the script skeleton and fields — PandaSDK `docs/scripting.md`:
+   the `Script` class, `PANDA_FIELDS_*`, `REGISTER_SCRIPT`).
+2. Build from a terminal:
+   `Scripts/Sandbox/scripts/configure_scripts.sh debug` (once),
+   then `Scripts/Sandbox/scripts/build_scripts.sh debug`.
+   Fix compilation errors yourself, using the output.
+3. Call the `reload` tool of the editor (its MCP server; without it ask the user to press
+   Reload, Cmd/Ctrl+R) — the editor picks up the fresh library (by mtime). Read the answer and
+   `logs` for errors; `play` and a `screenshot` of the `game` view show the game. Motion, input
+   and sound are checked by the user.
+
+After the scripts are loaded the editor updates `.Panda/scripts-manifest.json` — take the fields
+for binding in a world from there (panda-script-fields).

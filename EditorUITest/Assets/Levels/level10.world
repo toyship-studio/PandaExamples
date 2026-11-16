@@ -1,0 +1,98 @@
+{
+    "lighting": {
+        "ambientColor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+        },
+        "ambientIntensity": 0.12
+    },
+    "entities": [
+        {
+            "id": 1979487459,
+            "tagComponent": {
+                "tag": "Camera"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 6.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cameraComponent": {
+                "isPrimary": true,
+                "camera": {
+                    "projectionType": 0,
+                    "fieldOfView": 70.0,
+                    "orthoSize": 1.0,
+                    "zNear": 0.1,
+                    "zFar": 1000.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2574331406,
+            "tagComponent": {
+                "tag": "Flag 10"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "spriteRendererComponent": {
+                "color": {
+                    "x": 0.2,
+                    "y": 0.8,
+                    "z": 0.3,
+                    "w": 1.0
+                },
+                "cols": 1,
+                "rows": 1,
+                "index": 0,
+                "material": 0,
+                "texture": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        }
+    ]
+}

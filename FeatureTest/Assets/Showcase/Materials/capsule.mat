@@ -84,6 +84,11 @@
             "name": "emissiveIntensity",
             "type": 0,
             "value": 1.0
+        },
+        {
+            "name": "transmissionFactor",
+            "type": 0,
+            "value": 0.0
         }
     ]
 }

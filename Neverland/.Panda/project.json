@@ -1,0 +1,22 @@
+{
+    "rendering": {
+        "features": [
+            "lights",
+            "shadows",
+            "environment"
+        ]
+    },
+    "world": {
+        "startWorld": "Assets/world.world"
+    },
+    "modules": {
+        "entries": []
+    },
+    "mcp": {
+        "enabled": true,
+        "port": 7717
+    },
+    "export": {
+        "include": []
+    }
+}

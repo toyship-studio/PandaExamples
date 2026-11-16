@@ -1,0 +1,159 @@
+[
+  {
+    "label": "Configure EditorUITest Debug",
+    "command": "./Scripts/EditorUITest/scripts/configure_scripts.sh",
+    "args": [
+      "debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Build EditorUITest Debug",
+    "command": "./Scripts/EditorUITest/scripts/build_scripts.sh",
+    "args": [
+      "debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Configure EditorUITest Release",
+    "command": "./Scripts/EditorUITest/scripts/configure_scripts.sh",
+    "args": [
+      "release"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Build EditorUITest Release",
+    "command": "./Scripts/EditorUITest/scripts/build_scripts.sh",
+    "args": [
+      "release"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Open Export Xcode macOS",
+    "command": "./Scripts/EditorUITest/scripts/open_export_xcode.sh",
+    "args": [
+      "macos-debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Open Export Xcode iOS Simulator",
+    "command": "./Scripts/EditorUITest/scripts/open_export_xcode.sh",
+    "args": [
+      "ios-debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Open Export Xcode iOS Device",
+    "command": "./Scripts/EditorUITest/scripts/open_export_xcode.sh",
+    "args": [
+      "ios-device-debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Open Export Visual Studio Windows",
+    "command": "./Scripts/EditorUITest/scripts/open_export_visual_studio.sh",
+    "args": [
+      "windows-debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Format Code",
+    "command": "./Scripts/EditorUITest/scripts/format_code.sh",
+    "args": [],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "UI Tests: Run All",
+    "command": "python3",
+    "args": [
+      "Tests/run.py"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "UI Tests: Run This File",
+    "command": "python3",
+    "args": [
+      "Tests/run.py",
+      "$ZED_STEM"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "UI Tests: Run The Test Under The Cursor",
+    "command": "python3",
+    "args": [
+      "Tests/run.py",
+      "$ZED_SYMBOL"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "UI Tests: Run All, The Slow Ones Too",
+    "command": "python3",
+    "args": [
+      "Tests/run.py",
+      "--slow"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never"
+  }
+]

@@ -1,0 +1,415 @@
+{
+    "lighting": {
+        "ambientColor": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+        },
+        "ambientIntensity": 0.12
+    },
+    "entities": [
+        {
+            "id": 1997224941,
+            "tagComponent": {
+                "tag": "Camera"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 6.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cameraComponent": {
+                "isPrimary": true,
+                "camera": {
+                    "projectionType": 0,
+                    "fieldOfView": 70.0,
+                    "orthoSize": 1.0,
+                    "zNear": 0.1,
+                    "zFar": 1000.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 721049972,
+            "tagComponent": {
+                "tag": "Sun"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -3.0,
+                    "y": 3.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "directionalLightComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "intensity": 1.0,
+                "isEnabled": true
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2104025964,
+            "tagComponent": {
+                "tag": "Sky"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "cubeMapComponent": {
+                "material": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2564664452,
+            "tagComponent": {
+                "tag": "Crate"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "spriteRendererComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.5,
+                    "z": 0.2,
+                    "w": 1.0
+                },
+                "cols": 1,
+                "rows": 1,
+                "index": 0,
+                "material": 0,
+                "texture": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 319156964,
+            "tagComponent": {
+                "tag": "Group"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": [
+                    2213955653,
+                    452925951
+                ]
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": 1.5,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 2213955653,
+            "tagComponent": {
+                "tag": "Coin A"
+            },
+            "relationshipComponent": {
+                "parent": 319156964,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": -2.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "spriteRendererComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.85,
+                    "z": 0.2,
+                    "w": 1.0
+                },
+                "cols": 1,
+                "rows": 1,
+                "index": 0,
+                "material": 0,
+                "texture": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 452925951,
+            "tagComponent": {
+                "tag": "Coin B"
+            },
+            "relationshipComponent": {
+                "parent": 319156964,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 2.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "spriteRendererComponent": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.85,
+                    "z": 0.2,
+                    "w": 1.0
+                },
+                "cols": 1,
+                "rows": 1,
+                "index": 0,
+                "material": 0,
+                "texture": 0
+            },
+            "scriptListComponent": {
+                "scripts": []
+            }
+        },
+        {
+            "id": 3557732237,
+            "tagComponent": {
+                "tag": "Player"
+            },
+            "relationshipComponent": {
+                "parent": 0,
+                "children": []
+            },
+            "transformComponent": {
+                "position": {
+                    "x": 0.0,
+                    "y": -1.5,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                }
+            },
+            "spriteRendererComponent": {
+                "color": {
+                    "x": 0.25,
+                    "y": 0.5,
+                    "z": 1.0,
+                    "w": 1.0
+                },
+                "cols": 1,
+                "rows": 1,
+                "index": 0,
+                "material": 0,
+                "texture": 0
+            },
+            "scriptListComponent": {
+                "scripts": [
+                    {
+                        "name": "Probe",
+                        "scriptFields": [
+                            {
+                                "name": "count",
+                                "fieldId": 1695348488,
+                                "type": 0,
+                                "value": 3
+                            },
+                            {
+                                "name": "speed",
+                                "fieldId": 805702412,
+                                "type": 1,
+                                "value": 1.5
+                            },
+                            {
+                                "name": "target",
+                                "fieldId": 2759408164,
+                                "type": 2,
+                                "value": 2564664452
+                            },
+                            {
+                                "name": "icon",
+                                "fieldId": 1319187964,
+                                "type": 3,
+                                "value": 3467161616
+                            },
+                            {
+                                "name": "skin",
+                                "fieldId": 1007455228,
+                                "type": 4,
+                                "value": 2131492976
+                            },
+                            {
+                                "name": "next",
+                                "fieldId": 3809068700,
+                                "type": 5,
+                                "value": 3569056651
+                            },
+                            {
+                                "name": "numbers",
+                                "fieldId": 596397629,
+                                "type": 0,
+                                "value": [
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            },
+                            {
+                                "name": "levels",
+                                "fieldId": 860442718,
+                                "type": 5,
+                                "value": [
+                                    3569056651,
+                                    3847446806
+                                ]
+                            },
+                            {
+                                "name": "frames",
+                                "fieldId": 3494326243,
+                                "type": 3,
+                                "value": []
+                            },
+                            {
+                                "name": "waypoints",
+                                "fieldId": 1385856815,
+                                "type": 2,
+                                "value": [
+                                    2213955653,
+                                    452925951
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
