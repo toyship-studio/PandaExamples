@@ -115,6 +115,13 @@ def sync_project(source: Path = PROJECT_DIR, target: Path | None = None) -> Path
                 os.rmdir(folder)
             except OSError:
                 pass
+    # A project opens the worlds of its session, and the session is not a part of the project (it
+    # is not copied): every test starts with the start world of the project open.
+    settings = target / ".Panda" / "project.json"
+    start = json.loads(settings.read_text()).get("world", {}).get("startWorld", "") if settings.exists() else ""
+    if start:
+        session = {"worlds": [{"path": start}], "activeWorld": start}
+        (target / ".Panda" / "session.json").write_text(json.dumps(session, indent=4) + "\n")
     return target
 
 

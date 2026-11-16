@@ -122,6 +122,30 @@ def test_a_folder_dropped_on_the_header_gives_its_assets_of_the_kind(editor):
     editor.expect(PROBE + "frames/summary", label="Empty")
 
 
+def test_several_assets_go_to_the_list_of_a_pinned_tab(editor):
+    # The form of an entity gives way to the form of the assets when assets are selected — unless
+    # its tab is pinned (a double click on the tab). Then a selection of several assets is taken
+    # to its list at once, and the tab stays in front after the drop.
+    select_player(editor)
+    editor.expect("tab:Player", value="preview")
+    editor.double_tap("tab:Player")
+    editor.expect("tab:Player", value="")
+    editor.double_tap("contentBrowser/files/Textures")
+    editor.tap("contentBrowser/files/checker.png")
+    editor.tap("contentBrowser/files/stripes.png", shift=True)  # a range: checker, dots, stripes
+    editor.expect("tab:3 assets", selected=True)
+    editor.tap("tab:Player")
+    editor.drag("contentBrowser/files/dots.png", PROBE + "frames")
+    editor.expect("tab:Player", selected=True)
+    editor.expect(PROBE + "frames/summary", label="3 items")
+    editor.save()
+    assert editor.world().fields("Player", "Probe")["frames"] == [
+        asset_id(editor, "Assets/Textures/checker.png"),
+        asset_id(editor, "Assets/Textures/dots.png"),
+        asset_id(editor, "Assets/Textures/stripes.png"),
+    ]
+
+
 def test_an_entity_dropped_on_the_header_joins_the_list(editor):
     select_player(editor)
     editor.drag("hierarchy/Crate", PROBE + "waypoints")
