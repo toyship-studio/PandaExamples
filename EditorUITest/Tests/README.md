@@ -53,6 +53,22 @@ keyboard and does not hear the mouse: keep working. Do not close it by hand.
 - **A test fails when the editor logs an error** during it, whatever the test checked. A test
   that means to cause one says `editor.expects_errors = True`.
 
+## What deserves a test
+
+**A complex user scenario, and nothing simpler.** A test is for several steps across parts of
+the editor whose result lands in the files of the project or in the running game: a folder
+dropped on a list of a script that the next cook packs; an edit made in Play that Stop takes
+back; a file changed on disk under an unsaved edit. These break without anyone noticing.
+
+A basic scenario gets no test: that the project opens, a panel shows its content, a button
+answers a click, a section folds is what whoever starts the editor sees at once. Such tests
+only make the run longer and the suite heavier to keep. Before adding a test, ask what would
+have to go wrong for it to fail, and whether a person using the editor for a minute would not
+see that first.
+
+A check is seen failing once before it is trusted: break the expectation, run the test, put it
+back.
+
 ## Writing a test
 
 A test is a function `test_*(editor)` in a file `test_*.py` of this folder. `editor`
@@ -125,7 +141,9 @@ lands on something else. So a test has no pauses.
 
 Marks: `@pandatest.slow` — the test takes minutes and runs with `--slow` or when it is named;
 `@pandatest.scripts` (or `SCRIPTS = True` in the file) — the C++ scripts of the project are built
-before it.
+before it; `@pandatest.no_project` (or `NO_PROJECT = True`) — the editor starts without a project,
+on its start screen (`editor.wait_project(name)` waits for one to open). `editor.scratch` is an
+empty folder of the test's own, for what it makes outside the project — a new project, say.
 
 ### What to check
 

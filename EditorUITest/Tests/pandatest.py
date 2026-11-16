@@ -261,11 +261,12 @@ class Editor:
     machine do not reach it, its window has one size, it asks nothing) on a copy of the project,
     with user data of its own, and driven through its MCP server."""
 
-    def __init__(self, binary: Path, project: Path, user_data: Path, log_file: Path):
+    def __init__(self, binary: Path, project: Path | None, user_data: Path, log_file: Path, scratch: Path):
         self.binary = binary
-        self.project = project
+        self.project = project  # None — the editor starts without a project, on its start screen
         self.user_data = user_data
         self.log_file = log_file
+        self.scratch = scratch  # an empty folder of the test's own: for what it makes outside the project
         self.port = 0
         self.process: subprocess.Popen | None = None
         self.expects_errors = False  # the test means to make the editor log an error
@@ -278,32 +279,41 @@ class Editor:
         self.port = _free_port()
         self.log_file.parent.mkdir(parents=True, exist_ok=True)
         log = open(self.log_file, "wb")
-        self.process = subprocess.Popen(
-            [
-                str(self.binary),
-                "--project", str(self.project),
-                "--user-data", str(self.user_data),
-                "--mcp", str(self.port),
-                "--unattended",
-            ],
-            stdout=log,
-            stderr=subprocess.STDOUT,
-        )
+        command = [str(self.binary), "--user-data", str(self.user_data), "--mcp", str(self.port), "--unattended"]
+        if self.project is not None:
+            command += ["--project", str(self.project)]
+        self.process = subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT)
         deadline = time.time() + timeout
         while True:
             if self.process.poll() is not None:
                 raise RuntimeError("The editor exited at once (code %s). Its log: %s" % (self.process.returncode, self.log_file))
             try:
                 state = self.status()
-                if state.get("state") == "edit" and state.get("project"):
+                if self.project is None or (state.get("state") == "edit" and state.get("project")):
                     break
             except (OSError, http.client.HTTPException, ToolError, ValueError):
                 pass
             if time.time() > deadline:
                 self.stop()
-                raise RuntimeError("The editor did not open the project in %d s. Its log: %s" % (timeout, self.log_file))
+                raise RuntimeError("The editor did not start in %d s. Its log: %s" % (timeout, self.log_file))
             time.sleep(0.1)
-        self._log_start = self.status()["log"]["next"]
+        self.mark_log()
+
+    def mark_log(self) -> None:
+        """From here on the errors of the log are the test's (errors())."""
+        self._log_start = int(self.call("logs", limit=1).splitlines()[0].split("=", 1)[1])
+
+    def wait_project(self, name: str, timeout: float = 60.0) -> None:
+        """Waits for the project `name` to be open and ready to edit."""
+        deadline = time.time() + timeout
+        while True:
+            state = self.status()
+            project = state.get("project") or {}
+            if project.get("name") == name and state.get("state") == "edit":
+                return
+            if time.time() > deadline:
+                raise AssertionError("The project %r did not open: %s" % (name, state.get("project")))
+            time.sleep(0.1)
 
     def stop(self) -> None:
         if self.process is None:
@@ -545,4 +555,10 @@ def slow(function):
 def scripts(function):
     """The test needs the C++ scripts of the project built: the run builds them once before it."""
     function.panda_scripts = True
+    return function
+
+
+def no_project(function):
+    """The editor of the test starts without a project: on its start screen."""
+    function.panda_no_project = True
     return function

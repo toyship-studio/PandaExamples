@@ -37,6 +37,7 @@ class Test:
         self.slow = getattr(function, "panda_slow", False)
         self.scripts = getattr(function, "panda_scripts", False) or getattr(module, "SCRIPTS", False)
         self.shared = getattr(module, "SHARED_EDITOR", False)
+        self.no_project = getattr(function, "panda_no_project", False) or getattr(module, "NO_PROJECT", False)
 
 
 def discover() -> list[Test]:
@@ -80,14 +81,19 @@ class Session:
         self.project = WORK_DIR / "project" / PROJECT_DIR.name
         self.user_data = WORK_DIR / "userdata"
         self.editor_log = WORK_DIR / "editor.log"
+        self.scratch = WORK_DIR / "scratch"
         self.started: list[Editor] = []
 
-    def new_editor(self) -> Editor:
+    def new_editor(self, with_project: bool = True) -> Editor:
         """An editor on the project as it is in the project folder, with nothing left of the run
-        before: neither in the files nor in the settings of the editor."""
-        pandatest.sync_project(PROJECT_DIR, self.project)
+        before: neither in the files nor in the settings of the editor. Without a project it
+        starts on its start screen."""
+        if with_project:
+            pandatest.sync_project(PROJECT_DIR, self.project)
         shutil.rmtree(self.user_data, ignore_errors=True)
-        editor = Editor(self.binary, self.project, self.user_data, self.editor_log)
+        shutil.rmtree(self.scratch, ignore_errors=True)
+        self.scratch.mkdir(parents=True)
+        editor = Editor(self.binary, self.project if with_project else None, self.user_data, self.editor_log, self.scratch)
         self.started.append(editor)
         editor.start()
         return editor
@@ -132,7 +138,7 @@ def keep_evidence(test: Test, editor: Editor | None, error: str, session: Sessio
 
 def run_test(test: Test, editor: Editor) -> None:
     editor.expects_errors = False
-    editor._log_start = editor.status()["log"]["next"]
+    editor.mark_log()
     test.function(editor)
     if not editor.alive():
         raise AssertionError("The editor is gone: it exited or crashed during the test")
@@ -235,7 +241,7 @@ def run_tests(session: Session, chosen: list[Test], skipped: list[Test]) -> int:
                 if shared is not None:
                     shared.stop()
                     shared = None
-                editor = session.new_editor()
+                editor = session.new_editor(with_project=not test.no_project)
             run_test(test, editor)
         except Exception:
             error = traceback.format_exc()
